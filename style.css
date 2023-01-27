@@ -13,11 +13,10 @@ header {
 }
 
 main {
-	background-color: #ffffff;
+	background-color: #180718;
 	padding: 20px;
-	border-radius: 10px;
 	min-width: 300px;
-	max-width: 1920px;
+	max-width: 2560px;
 	margin: auto;
 }
 
@@ -48,7 +47,7 @@ nav {
 
 nav li {
 	display: inline;
-	margin: 0 0 0 70px;
+	margin: 0 0 0 30px;
 	
 }
 
@@ -62,7 +61,7 @@ nav a {
 }
 
 nav a:hover {
-	color: #92168c;
+	color: #4f249f;
 }
 
 .produtos {
@@ -85,11 +84,11 @@ nav a:hover {
 }
 
 .projetos li:hover {
-	border-color: #6e0d61;
+	border-color: #4f249f;
 }
 
 .projetos li:active {
-	border-color: #730777;
+	border-color: #4f249f;
 }
 
 .projetos li:hover h2 {
@@ -102,6 +101,7 @@ nav a:hover {
 }
 
 .principal {
+	color: #ffffff;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -119,14 +119,16 @@ nav a:hover {
 
 footer {
 	text-align: center;
-	background: url("img/bg.jpg");
-	padding: 40px 0;
+	padding: 10px 0;
+	font-style: italic;
+	margin: auto;
 }
 
 .carregamento {
     color: rgb(0, 0, 0);
     background: linear-gradient(to right, #2d60ec, #3ccfda);
     font-size: 30px;
+	padding: 10px 0px 10px 0px;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     animation: animate8345 9s linear infinite;
