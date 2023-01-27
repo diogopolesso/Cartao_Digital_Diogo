@@ -2,14 +2,24 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+    /*
+	position: relative;
+    width: 100%;
+    height: 70px;
+	
+	*/
+	
 header {
-	background: #ffffff;
+	background: #000000;
 	padding: 20px 0;
+	height: 140px;
 }
 
 .banner {
-	width: 100%;
-	padding: auto;
+	background-color: #170617;
+	position: relative;
+	width: 60%;
+	padding-left: 1020px;
 	margin: 0 auto;
 }
 
@@ -19,7 +29,6 @@ header {
 	width: 940px;
 	margin: auto;
 	padding-left: 20px;
-	padding-top: 120px;
 }
 
 nav {
@@ -36,7 +45,7 @@ nav li {
 
 nav a {
 	text-transform: uppercase;
-	color: #000000;
+	color: #ffffff;
 	font-weight: bold;
 	font-size: 22px;
 	text-decoration: none;
@@ -80,6 +89,10 @@ nav a:hover {
 .projetos h2 {
 	font-size: 30px;
 	font-weight: bold;
+}
+
+main {
+	background-color: #ffffff;
 }
 
 .video {
