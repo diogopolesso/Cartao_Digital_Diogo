@@ -2,17 +2,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-    /*
-	position: relative;
-    width: 100%;
-    height: 70px;
-	
-	*/
-	
 header {
 	background: #000000;
 	padding: 20px 0;
-	height: 140px;
+	height: 12px;
 }
 
 .banner {
@@ -26,28 +19,25 @@ header {
 .caixa {
 	position: relative;
 	text-align: center;
-	width: 940px;
 	margin: auto;
-	padding-left: 20px;
 }
 
 nav {
 	position: absolute;
-	top: 110px;
-	right: 110px;
+	top: 0px;
 }
 
 
 nav li {
 	display: inline;
-	margin: 0 0 0 20px;
+	margin: 0 0 0 70px;
 }
 
 nav a {
 	text-transform: uppercase;
 	color: #ffffff;
 	font-weight: bold;
-	font-size: 22px;
+	font-size: 15px;
 	text-decoration: none;
 }
 
