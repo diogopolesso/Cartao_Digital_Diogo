@@ -7,16 +7,19 @@ header {
 	padding: 20px 0;
 }
 
-#banner {
-    width: 100%;
+.banner {
+	width: 100%;
 	padding: auto;
 	margin: 0 auto;
 }
 
 .caixa {
 	position: relative;
+	text-align: center;
 	width: 940px;
-	margin: 0 auto;
+	margin: auto;
+	padding-left: 20px;
+	padding-top: 120px;
 }
 
 nav {
@@ -40,7 +43,7 @@ nav a {
 }
 
 nav a:hover {
-	color: #C78C19;
+	color: #92168c;
 }
 
 .produtos {
@@ -63,11 +66,11 @@ nav a:hover {
 }
 
 .projetos li:hover {
-	border-color: #C78C19;
+	border-color: #6e0d61;
 }
 
 .projetos li:active {
-	border-color: #088C19;
+	border-color: #730777;
 }
 
 .projetos li:hover h2 {
@@ -85,7 +88,7 @@ nav a:hover {
 }
 
 .copyrigth {
-	color: #FFFFFF;
+	color: #500f45;
 	font-size: 15px;
 	margin: 20px 0 0;
 }
