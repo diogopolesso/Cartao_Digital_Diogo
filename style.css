@@ -26,6 +26,13 @@ main {
 	margin: auto;
 }
 
+.banner1 {
+	width: 50%;
+	display: block;
+	margin: auto;
+
+}
+
 .caixa {
 	position: relative;
 	text-align: center;
