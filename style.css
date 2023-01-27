@@ -1,19 +1,29 @@
 body {
     font-family: 'Montserrat', sans-serif;
+	background-color: #000000;
+	width: 100%;
+	margin: auto;
 }
 
 header {
 	background: #000000;
 	padding: 20px 0;
 	height: 12px;
+	margin: auto;
+}
+
+main {
+	background-color: #ffffff;
+	padding: 20px;
+	border-radius: 10px;
+	min-width: 300px;
+	max-width: 1920px;
+	margin: auto;
 }
 
 .banner {
-	background-color: #170617;
-	position: relative;
-	width: 60%;
-	padding-left: 1020px;
-	margin: 0 auto;
+	width: 100%;
+	margin: auto;
 }
 
 .caixa {
@@ -23,14 +33,16 @@ header {
 }
 
 nav {
-	position: absolute;
+	position:absolute;
 	top: 0px;
+	margin: auto;
 }
 
 
 nav li {
 	display: inline;
 	margin: 0 0 0 70px;
+	
 }
 
 nav a {
@@ -39,6 +51,7 @@ nav a {
 	font-weight: bold;
 	font-size: 15px;
 	text-decoration: none;
+	margin: auto;
 }
 
 nav a:hover {
@@ -81,8 +94,9 @@ nav a:hover {
 	font-weight: bold;
 }
 
-main {
-	background-color: #ffffff;
+.principal {
+	display: inline-block;
+	vertical-align: top;
 }
 
 .video {
@@ -91,7 +105,7 @@ main {
 }
 
 .copyrigth {
-	color: #500f45;
+	color: #ffffff;
 	font-size: 15px;
 	margin: 20px 0 0;
 }
