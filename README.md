@@ -2,7 +2,7 @@
 
 Neste Projeto você vai poder acompanhar o Desenvolvimento do meu site Pessoal a nivel experimental.
 
-https://main.d374x7qu79spv.amplifyapp.com/
+https://main.d30ort9gvm3x11.amplifyapp.com/
 
 ****
 ## Linguagens a serem usadas:
