@@ -44,4 +44,5 @@ Página de contato:
 
 ****
 
-banner1
+banner1.png
+
