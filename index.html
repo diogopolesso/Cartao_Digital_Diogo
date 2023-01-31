@@ -10,19 +10,19 @@
     <title>Sou Dev</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <a id="logo" href="">Logo</a>
-        <div class="caixa">
             <nav id="nav">
-                <button id="bot-mobile">Menu</button>
-                <ul id="menu">
+                <button aria-label= "Abrir Menu" id="bot-mobile" aria-haspopup ="true" aria-expanded="false">Menu
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" role="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="projetos.html">Projetos</a></li>
                     <li><a href="projetos.html">Habilidades</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
-        </div>
     </header>
     <picture>
         <source class="banner1" media="(max-width: 500px)" srcset="img/banner1.png">
@@ -51,9 +51,9 @@
             // window.alert('O que você vai ver aqui é um projeto pessoal meu em Desenvolvimento!')
         </script>
     </main>
+    <script src="script.js"></script>
     <footer>
         <p class="copyrigth">&copy; Copyright Diogo Polesso</p>
     </footer>
 </body>
 </html>
-
