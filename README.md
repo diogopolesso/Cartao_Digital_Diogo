@@ -41,3 +41,7 @@ Página de contato:
 
 - Formulário de contato para que as pessoas possam entrar em contato.
 - Informações de contato adicionais, como meu endereço de e-mail e número de telefone.
+
+****
+
+banner1
