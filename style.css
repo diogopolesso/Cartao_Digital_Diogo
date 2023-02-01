@@ -182,9 +182,7 @@ footer {
         display: block;
         border-top: 3px solid #ffffff;
         width: 20px;
-		
-		
-    }
+	}
 
     #hamburger::after, #hamburger::before {
         content: '';
