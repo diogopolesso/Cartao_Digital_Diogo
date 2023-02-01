@@ -19,7 +19,6 @@ body {
 #bot-mobile {
 	display: none;
 	margin: auto;
-	
 }
 
 #logo {
@@ -38,7 +37,7 @@ body {
 }
 
 #nav {
-	top: 0px;
+	top: 100px;
 	margin: 20px;
 	padding: 20px;
 }
@@ -52,8 +51,7 @@ body {
 }
 
 #nav li {
-	display: inline;
-	margin: 0 0 0 30px;
+	margin: 0 0 0 60px;
 	
 }
 
@@ -64,7 +62,7 @@ body {
 	font-size: 15px;
 	text-decoration: none;
 	margin: auto;
-	transition-duration: 0.4s;
+	transition-duration: 0.3s;
 }
 
 #nav a:hover {
@@ -142,17 +140,17 @@ footer {
 	}
 	
 	#menu {
-		display: block;
-		position: absolute;
+		display:block;
+		position:absolute;
 		width: 100%;
 		top: 70px;
 		right: 0px;
         height: 0px;
-		transition: .6s;
-		z-index: 1000;
-		height: 0px;
+		transition: .3s;
+		z-index: 10000;
 		visibility: hidden;
 		overflow-y: hidden;
+
 	}
 
 	#nav.active #menu {
@@ -182,7 +180,7 @@ footer {
 	}
     #hamburger {
         display: block;
-        border-top: 3px solid;
+        border-top: 3px solid #ffffff;
         width: 20px;
 		
 		
@@ -194,7 +192,7 @@ footer {
         width: 20px;
         height: 3px;
         background: #ffffff;
-        margin-top: 5px;
+        margin-top: 4px;
         transition: .3s;
         position: relative;
     }
