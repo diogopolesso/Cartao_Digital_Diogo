@@ -36,13 +36,13 @@ body {
 	color: #4f249f;
 }
 
-#nav {
+#nav .nav-list{
 	top: 100px;
 	margin: 20px;
 	padding: 20px;
 }
 
-#menu {
+.nav-list {
 	display: flex;
 	list-style: none;
 	gap: .5rem;
@@ -50,12 +50,12 @@ body {
 
 }
 
-#nav li {
+.nav-list li {
 	margin: 0 0 0 60px;
 	
 }
 
-#menu a {
+.nav-list a {
 	text-transform: uppercase;
 	color: #ffffff;
 	font-weight: bold;
@@ -65,7 +65,7 @@ body {
 	transition-duration: 0.3s;
 }
 
-#nav a:hover {
+.nav-list a:hover {
 	color: #4f249f;
 }
 
@@ -75,6 +75,20 @@ main {
 	min-width: 300px;
 	max-width: 2560px;
 	margin: auto;
+}
+
+.mobile-menu {
+	display: none;
+	cursor: pointer;
+}
+
+.mobile-menu div {
+	width: 20px;
+	height: 2px;
+	background: #ffffff;
+	margin: 5px;
+	transition: 0.3s;
+	position:relative;
 }
 
 .banner {
@@ -93,11 +107,6 @@ main {
 	color: #ffffff;
 	display: inline-block;
 	vertical-align: top;
-}
-
-.video {
-	width: 560px;
-	margin: 2em auto;
 }
 
 .copyrigth {
@@ -135,76 +144,56 @@ footer {
 }
 
 @media (max-width: 600px) {
-	#bot-mobile {
-		display: block;
+	body {
+		overflow-x: hidden;
 	}
 	
-	#menu {
-		display:block;
-		position:absolute;
-		width: 100%;
-		top: 70px;
-		right: 0px;
-        height: 0px;
-		transition: .3s;
-		z-index: 10000;
-		visibility: hidden;
-		overflow-y: hidden;
+	.nav-list {
+	position:absolute;
+	width: 100%;
+	top: 70px;
+	right: 0px;
+	height: 0px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	transform: translateX(100%);
 
 	}
-
-	#nav.active #menu {
-		height: calc(100vh - 70px);
-		visibility: visible;
-		overflow-y: auto;
+	.nav-list li {
+	margin-left: 0;
+	opacity: 0;
 	}
-
-	#menu a {
-		text-transform: uppercase;
-		color: #ffffff;
-		font-weight: bold;
-		font-size: 15px;
-		text-decoration: none;
-		margin: auto;
-		transition-duration: 0.4s;
+	.mobile-menu {
+	display: block;
 	}
-
-	#bot-mobile {
-		display: flex;
-		padding: .5rem 1rem;
-		font-size: 1rem;
-		border: none;
-		background: none;
-		cursor: pointer;
-        gap: .5rem;
 	}
-    #hamburger {
-        display: block;
-        border-top: 3px solid #ffffff;
-        width: 20px;
+	
+	.nav-list.active {
+	transform: translateX(0);
 	}
-
-    #hamburger::after, #hamburger::before {
-        content: '';
-        display: block;
-        width: 20px;
-        height: 3px;
-        background: #ffffff;
-        margin-top: 4px;
-        transition: .3s;
-        position: relative;
-    }
-
-    #nav.active #hamburger {
-        border-top-color: transparent;
-    }
-    
-    #nav.active #hamburger::before {
-        transform: rotate(135deg);
-    }
-
-    #nav.active #hamburger::after {
-        transform: rotate(-135deg);
-        top: -7px;
-    }
-}
+	
+	@keyframes navLinkFade {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	}
+	
+	.mobile-menu.active .line1 {
+	transform: rotate(-135deg);
+    top: 10px;
+	}
+	
+	.mobile-menu.active .line2 {
+	opacity: 0;
+	}
+	
+	.mobile-menu.active .line3 {
+	transform: rotate(135deg);
+	top: -5px;
+	}
