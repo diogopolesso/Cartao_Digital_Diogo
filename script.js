@@ -1,17 +1,44 @@
-const botmobile = document.getElementById('bot-mobile');
-
-function toggleMenu(event) {
-    if (event.type === 'toutchstart') event.preventDefault();
-    const nav = document.getElementById('nav');
-    nav.classList.toggle('active');
-    // const active = nav.classList.contains('active');
-    // event.currentTarget.setAttribute('aria-expanded', 'true');
-    // if (active) {
-    //     event.currentTarget.setAttribute('aria-label', 'Fechar Menu')
-    // } else {
-    //     event.currentTarget.setAttribute('aria-label', 'Abrir Menu')
-    // }
-}
-
-botmobile.addEventListener('click', toggleMenu);
-botmobile.addEventListener('touchstart', toggleMenu);
+class MobileNav {
+    constructor(mobileMenu, navList, navLinks) {
+      this.mobileMenu = document.querySelector(mobileMenu);
+      this.navList = document.querySelector(navList);
+      this.navLinks = document.querySelectorAll(navLinks);
+      this.activeClass = "active";
+  
+      this.handleClick = this.handleClick.bind(this);
+    }
+  
+    animateLinks() {
+      this.navLinks.forEach((link, index) => {
+        link.style.animation
+          ? (link.style.animation = "")
+          : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+              index / 7 + 0.3
+            }s`);
+      });
+    }
+  
+    handleClick() {
+      this.navList.classList.toggle(this.activeClass);
+      this.mobileMenu.classList.toggle(this.activeClass);
+      this.animateLinks();
+    }
+  
+    addClickEvent() {
+      this.mobileMenu.addEventListener("click", this.handleClick);
+    }
+  
+    init() {
+      if (this.mobileMenu) {
+        this.addClickEvent();
+      }
+      return this;
+    }
+  }
+  
+  const mobileNav = new MobileNav(
+    ".mobile-menu",
+    ".nav-list",
+    ".nav-list li",
+  );
+  mobileNav.init();
