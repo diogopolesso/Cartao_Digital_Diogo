@@ -14,6 +14,11 @@ Neste Projeto você vai poder acompanhar o Desenvolvimento do meu site Pessoal a
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" width="60"/>
 </div>
 
+**Editor:**
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="60"/>
+          
+
 ****
 ## Pequeno Esboço:
 
