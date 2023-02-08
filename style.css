@@ -105,9 +105,10 @@ main {
 
 .principal {
 	color: #ffffff;
-	display: inline-block;
+	display: flex;
 	vertical-align: top;
 	text-align: center;
+	justify-content:center;
 }
 
 .copyrigth {
@@ -120,11 +121,15 @@ main {
     color: rgb(0, 0, 0);
     background: linear-gradient(to right, #2d60ec, #3ccfda);
     font-size: 30px;
-	padding: 10px 0px 10px 0px;
+      padding: 10px 0px 10px 0px;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     animation: animate8345 9s linear infinite;
     font-weight: bold;
+	display: flex;
+	text-align: center;
+	justify-content:center;
+
 }
 
 footer {
