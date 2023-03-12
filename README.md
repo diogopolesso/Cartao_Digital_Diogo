@@ -2,7 +2,7 @@
 
 Neste Projeto você vai poder acompanhar o Desenvolvimento do meu site Pessoal a nivel experimental.
 
-<a href="https://diogopolesso.vercel.app/" color="white">
+<a href="" color="white">
       Acesse Aqui
 
 ****
