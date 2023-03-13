@@ -157,14 +157,28 @@ body {
 
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
 
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 500px) {
 
     .card {
+        width: auto;
+        
+    }
 
+    .card__image {
+        width: auto;
     }
     
-    .copyrigth {
+    .social-icons {
+        width: auto;
+    }
 
+    .draw-border {
+        width: auto;
+    }
+
+    .copyrigth {
+        width: auto;
     }
     
 }
