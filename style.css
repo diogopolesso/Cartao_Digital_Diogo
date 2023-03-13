@@ -148,11 +148,23 @@ body {
 }
 
 .copyrigth {
+    padding: 10px;
     text-align: center;
-	padding: 10px 0;
-	font-style: italic;
+    font-style: italic;
     color: #afafaf
 }
 
 
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
+
+@media screen and (max-width: 600px) {
+
+    .card {
+
+    }
+    
+    .copyrigth {
+
+    }
+    
+}
