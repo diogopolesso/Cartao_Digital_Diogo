@@ -18,9 +18,9 @@ body {
 .card {
     background-color: var(--cor-background-secundario);
     width: 30rem;
-    height: 57rem;
-    margin: auto;
-    border-radius: 10px;
+    height: 50rem;
+    margin: 100px auto 5px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,9 +29,10 @@ body {
 }
 
 .card__name {
-    margin: 15px;
+    margin: 20px;
     font-size: 1.5rem;
     font-family: 'Krona One', sans-serif;
+    letter-spacing: 0.05rem;
 }
 
 .card__image {
@@ -39,7 +40,7 @@ body {
     width: 160px;
     border-radius: 50%;
     border: 5px solid var(--cor-background-principal);
-    margin-top: 50px;
+    margin-top: -75px;
 }
 
 .draw-border {
@@ -74,7 +75,7 @@ body {
 .btn {
     background: var(--cor-background-principal);
     border: none;
-    line-height: 1.5;
+    line-height: 1.5rem;
     font: 400 1.2rem "Roboto Slab", sans-serif;
     padding: 0.75rem 2rem;
     letter-spacing: 0.05rem;
@@ -145,10 +146,16 @@ body {
     grid-gap: 10px;
     font-size: 1em;
     font-family: 'Krona One', sans-serif;
+    letter-spacing: 0.05rem;
+}
+
+.subTitulo {
+    margin: 5px;
+    color: var(--cor-principal);
 }
 
 .copyrigth {
-	padding: 10px;
+    padding: 10px;
     text-align: center;
 	font-style: italic;
     color: var(--cor-secundaria);
@@ -158,6 +165,10 @@ body {
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
 
 @media screen and (max-width: 500px) {
+
+    body {
+        margin: 0px 5px 0px 5px;
+    }
 
     .card {
         width: auto;
@@ -173,7 +184,7 @@ body {
     }
 
     .draw-border {
-        width: auto;
+        width: 23rem;
     }
 
     .copyrigth {
